@@ -1,4 +1,4 @@
-echo "Updating repositories..."
+echo "Updating packages..."
 sudo apt update
 
 echo "Upgrading installed packages..."
@@ -21,7 +21,7 @@ echo "Installing gem..."
 sudo apt install gem
 
 echo "Installing rails version 5.0.0..."
-sudo gem install rails -v 5.0.0
+gem install rails -v 5.0.0
 
 echo "Installing nodejs..."
 sudo apt install nodejs
