@@ -15,6 +15,7 @@ sudo apt install build-essential
 
 echo "Installing rvm..."
 sudo curl -L https://get.rvm.io | bash -s stable --ruby
+source ~/.rvm/scripts/rvm
 
 echo "Installing gem..."
 sudo apt install gem
