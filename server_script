@@ -1,0 +1,32 @@
+echo "Updating repositories..."
+sudo apt update
+
+echo "Upgrading installed packages..."
+sudo apt upgrade
+
+echo "Installing git..."
+sudo apt install git
+
+echo "Installing curl..."
+sudo apt install curl
+
+echo "Installing build-essential..."
+sudo apt install build-essential
+
+echo "Installing rvm..."
+sudo curl -L https://get.rvm.io | bash -s stable --ruby
+
+echo "Installing gem..."
+sudo apt install gem
+
+echo "Installing rails version 5.0.0..."
+sudo gem install rails -v 5.0.0
+
+echo "Installing nodejs..."
+sudo apt install nodejs
+
+echo "Installing imagemagick..."
+sudo apt install imagemagick
+
+echo "Installing NGINX..."
+sudo apt install nginx
