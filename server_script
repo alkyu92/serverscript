@@ -5,29 +5,29 @@ echo "Upgrading installed packages..."
 sudo apt upgrade
 
 echo "Installing git..."
-sudo apt install git
+yes Y | sudo apt install git
 
 echo "Installing curl..."
-sudo apt install curl
+yes Y | sudo apt install curl
 
 echo "Installing build-essential..."
-sudo apt install build-essential
+yes Y | sudo apt install build-essential
 
 echo "Installing rvm..."
-sudo curl -L https://get.rvm.io | bash -s stable --ruby
+yes Y | sudo curl -L https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
 
 echo "Installing gem..."
-sudo apt install gem
+yes Y | sudo apt install gem
 
 echo "Installing rails version 5.0.0..."
-gem install rails -v 5.0.0
+yes Y | gem install rails -v 5.0.0
 
 echo "Installing nodejs..."
-sudo apt install nodejs
+yes Y | sudo apt install nodejs
 
 echo "Installing imagemagick..."
-sudo apt install imagemagick
+yes Y | sudo apt install imagemagick
 
 echo "Installing NGINX..."
-sudo apt install nginx
+yes Y | sudo apt install nginx
