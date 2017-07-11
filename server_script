@@ -2,7 +2,7 @@ echo "Updating packages..."
 sudo apt update
 
 echo "Upgrading installed packages..."
-sudo apt upgrade
+yes Y | sudo apt upgrade
 
 echo "Installing git..."
 yes Y | sudo apt install git
@@ -16,6 +16,7 @@ yes Y | sudo apt install build-essential
 echo "Installing rvm..."
 yes Y | sudo curl -L https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
+rvm install ruby-2.3.3
 
 echo "Installing gem..."
 yes Y | sudo apt install gem
