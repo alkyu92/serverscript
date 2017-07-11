@@ -32,3 +32,6 @@ yes Y | sudo apt install imagemagick
 
 echo "Installing NGINX..."
 yes Y | sudo apt install nginx
+
+echo "Installing libpq-dev..."
+yes Y | sudo apt install libpq-dev
