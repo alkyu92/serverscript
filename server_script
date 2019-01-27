@@ -23,9 +23,6 @@ rvm install ruby-2.3.3
 echo "Installing gem..."
 yes Y | sudo apt install gem
 
-echo "Installing rails version 5.0.0..."
-yes Y | gem install rails -v 5.0.0
-
 echo "Installing nodejs..."
 yes Y | sudo apt install nodejs
 
@@ -38,3 +35,5 @@ yes Y | sudo apt install nginx
 echo "Installing libpq-dev..."
 yes Y | sudo apt install libpq-dev
 
+echo "Installing rails"
+yes Y | gem install rails
